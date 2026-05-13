@@ -10,15 +10,15 @@ export default function TextArea() {
     const handleForm = e => {
         setForm({
             ...form,
-            // [e.target.name]: e.target.value        
+            [e.target.name]: e.target.value        
         });
     };
 
     return(
         <form>
-            <label htmlFor="text"></label>
-            <textarea name="text" id="text"
-            // cols="30" rows="7"
+            <label htmlFor="comment"></label>
+            <textarea name="comment" id="comment"
+            cols="30" rows="7"
             value={form.text}
             onChange={handleForm}></textarea>
         </form>

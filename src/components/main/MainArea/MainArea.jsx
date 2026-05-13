@@ -5,6 +5,5 @@ export default function MainArea() {
         <header>
             <h1>メインエリア</h1>
         </header>
-    )
-    
+    ) 
 }
