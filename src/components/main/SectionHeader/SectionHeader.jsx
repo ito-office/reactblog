@@ -1,9 +1,12 @@
-import { Children } from "react";
+// import { Children } from "react";
+import styles from './SectionHeader.module.css';
 
 export default function SectionHeader({children = 'Latest Blog Posts'}) {
     return(
-        <div>
-            <h2>{children}</h2>
+        <div className={styles.box}>
+            <h2 className={styles.heading}>
+                {children}
+            </h2>
         </div>
     );
 }

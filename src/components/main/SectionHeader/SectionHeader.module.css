@@ -1,0 +1,13 @@
+.box{
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.heading{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}

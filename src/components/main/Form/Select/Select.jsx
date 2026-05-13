@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function FormSelect() {
+export default function Select() {
     const [form , setForm] = useState();
 
     const handleForm = e => {

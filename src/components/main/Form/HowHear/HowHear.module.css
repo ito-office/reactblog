@@ -1,0 +1,18 @@
+.box{
+    margin: 20px 0;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.btn{
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background: white;
+    cursor: pointer;
+}
