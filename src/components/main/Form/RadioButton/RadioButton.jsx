@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from './RadioButton.module.css'
 
 export default function RadioButton() {
     const [form , setForm] = useState({});
@@ -18,7 +19,7 @@ export default function RadioButton() {
 
     //Stateの現在値に応じて,checked属性の値を決定
     return(
-        <form>
+        <form className={styles.checkbox}>
             <label htmlFor=""></label>
             <input type="radio" name="text" id=""
             value="text" 
@@ -46,7 +47,6 @@ export default function RadioButton() {
             // checked={}
             // onChange={handleForm}
             /><br/>
-
 
             {/* <button onClick={handleClick}
             className={`${isDone ? styles.button : styles.add} `}>

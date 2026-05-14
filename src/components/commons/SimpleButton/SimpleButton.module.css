@@ -1,0 +1,22 @@
+.submitbutton{
+    /* display: block; */
+    width: 146px;
+    height: 32px;
+    /* margin: 20px 0 0 20px; */
+    padding: 8px 16px;
+    gap: 10px;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.button{
+    background-color: #333;
+    /* border-radius: 16px; */
+    color: #fff;
+}
+
+.add{
+    background-color: #cd3796;
+    border-radius: 16px;
+    color: #fff;
+}

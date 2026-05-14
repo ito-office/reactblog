@@ -2,9 +2,8 @@ import { useState } from "react";
 
 export default function TextArea() {
     const [form , setForm] = useState({
-        comment:'ここに記入してください。'
-
-    })
+        comment:`ここに記入してください。`
+    });
 
 //テキストエリアの変更時に入力値をStateに反映
     const handleForm = e => {
@@ -20,7 +19,8 @@ export default function TextArea() {
             <textarea name="comment" id="comment"
             cols="30" rows="7"
             value={form.text}
-            onChange={handleForm}></textarea>
+            onChange={handleForm}>
+            ここに記入してください。</textarea><br />
         </form>
     );
 }

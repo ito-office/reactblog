@@ -9,12 +9,12 @@ export default function SimpleButton() {
     }
 
     return(
-        <>
-            <button onClick={handleClick}
+        <div className="submitbutton">
+            <button onMouseOver={handleClick}
             className={`${isDone ? styles.button : styles.add} `}>
                 送信
             </button>
-        </>
+        </div>
     );
     
 }

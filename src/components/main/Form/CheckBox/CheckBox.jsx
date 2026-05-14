@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from './CheckBox.module.css'
 
 export default function CheckBox() {
     const [form , setForm] = useState({
@@ -18,7 +19,7 @@ export default function CheckBox() {
     // }
 
     return(
-        <form>
+        <form className={styles.checkbox}>
             <label htmlFor="check"></label>
             <input type="checkbox" name="" id="" 
             // checked={}

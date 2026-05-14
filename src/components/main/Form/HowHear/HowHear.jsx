@@ -4,9 +4,9 @@ export default function HowHear({items = [] }) {
     return(
         <div className={styles.box}>
             <select name="how" id="how" className={styles.select}>
-                <option value="select">Z</option>
-                {items.map((item, index) => (
-                    <option key={index} value={item.value}>
+                <option value="select">--１つ選択してください--</option>
+                {items.map((item, id) => (
+                    <option key={id} value={item.value}>
                             {item.text}
                     </option>
                 ))}

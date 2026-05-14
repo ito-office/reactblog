@@ -1,5 +1,7 @@
+import SimpleButton from "./components/commons/SimpleButton/SimpleButton";
 import FooterArea from "./components/footer/FooterArea/FooterArea";
 import HeaderArea from "./components/header/HeaderArea/HeaderArea";
+import TextArea from "./components/main/Form/TextArea/TextArea";
 import MainArea from "./components/main/MainArea/MainArea";
 import SectionHeader from "./components/main/SectionHeader/SectionHeader";
 
@@ -7,11 +9,11 @@ function App() {
 
   return (
     <>
-      <h1 style={{color:'red'}}>テスト</h1>
       <HeaderArea />
       <MainArea />
       <FooterArea /> 
-      <SectionHeader/>  
+      <SectionHeader/> 
+      <SimpleButton />
     </>
   )
 }
