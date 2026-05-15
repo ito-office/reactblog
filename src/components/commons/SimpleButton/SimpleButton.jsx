@@ -4,17 +4,22 @@ import styles from './SimpleButton.module.css';
 export default function SimpleButton() {
     const [isDone , setIsDone] = useState(false);
 
-    const handleClick = () => {
+    const handleMouseOver = () => {
         setIsDone(true);
     }
 
+    const handleMouseOut = () => {
+        setIsDone(false);
+    }
+
     return(
-        <div className="submitbutton">
-            <button onMouseOver={handleClick}
-            className={`${isDone ? styles.button : styles.add} `}>
+        <div>
+            <button 
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+            className={isDone ? styles.button : styles.add}>
                 送信
             </button>
         </div>
     );
-    
 }

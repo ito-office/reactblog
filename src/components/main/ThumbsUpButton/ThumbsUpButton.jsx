@@ -3,16 +3,22 @@ import styles from './ThumbsUpButton.module.css';
 
 export default function ThumbsUpButton() {
 
-//props(init)でState(count)を初期化
+//propsでStateを初期化
     const[count , setCount] = useState({});
+    const[like , setLike] = useState(false);
 
 //[カウント]ボタンクリック時にカウント値をインクリメント
+//[いいね]ボタンをクリック時に色がつく
     const handleClick = () => setCount(count + 1);
+    const liked = () => setLike(
 
-
-    return(
-        <button onClick={handleClick}></button>
+    // className={isDone ? styles.button : styles.add}>
     );
+
+//     return(
+//         <button onClick={handleClick}
+//         // {like ?  }></button>
+//     );
 
 }
 
