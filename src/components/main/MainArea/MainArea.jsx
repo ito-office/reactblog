@@ -3,6 +3,9 @@ import styles from './MainArea.module.css'
 import HowHear from '../Form/HowHear/HowHear';
 import RadioButton from '../Form/RadioButton/RadioButton';
 import CheckBox from '../Form/CheckBox/CheckBox';
+import ThumbsUpButton from '../ThumbsUpButton/ThumbsUpButton';
+import ThumbsDownButton from '../ThumbsDownButton/ThumbsDownButton';
+import BamosLogo from '../../commons/BamosLogo/BamosLogo';
 
 export default function MainArea() {
 
@@ -22,7 +25,10 @@ export default function MainArea() {
     return(
         <main>
             <h1>メインエリア</h1>
-            <HowHear items={menuItems} />
+            {/* <HowHear items={menuItems} /> */}
+            <ThumbsUpButton  props={123}/>
+            <ThumbsDownButton props={9}/>
+            <BamosLogo />
         </main>
     );
 }

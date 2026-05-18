@@ -12,8 +12,8 @@ function App() {
       <HeaderArea />
       <MainArea />
       <FooterArea /> 
-      <SectionHeader/> 
-      <SimpleButton />
+      {/* <SectionHeader/> 
+      <SimpleButton /> */}
     </>
   )
 }

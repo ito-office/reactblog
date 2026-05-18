@@ -2,7 +2,7 @@ import styles from './HowHear.module.css'
 
 export default function HowHear({items = [] , children}) {
     return(
-         <>
+        <>
             {children}
             <div className={styles.box}>
                 <select name="how" id="how" className={styles.select}>
@@ -12,8 +12,8 @@ export default function HowHear({items = [] , children}) {
                                 {item.text}
                         </option>
                     ))}
-            </select>
-        </div>
+                </select>
+            </div>
         </>
     );
 }
