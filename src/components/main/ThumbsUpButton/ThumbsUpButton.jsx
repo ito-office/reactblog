@@ -24,8 +24,8 @@ export default function ThumbsUpButton({props = 0}) {
             <img 
             src = {like ? thumbupcolor : thumbup} 
             alt = "いいねのボタン" 
+            className=''
             />
-
             </button>
             <span>{count}</span>
         </div>
