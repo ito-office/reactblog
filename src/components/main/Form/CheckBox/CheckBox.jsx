@@ -22,32 +22,20 @@ export default function CheckBox() {
         <form className={styles.checkbox}>
             <label htmlFor="check"></label>
             <input type="checkbox" name="" id="" 
-            // checked={}
-            // onChange={handleForm}
             /><br/>
 
             <label htmlFor="check"></label>
             <input type="checkbox" name="" id="" 
-            // checked={}
-            // onChange={handleForm}
             /><br/>
 
             <label htmlFor="check"></label>
             <input type="checkbox" name="" id="" 
-            // checked={}
-            // onChange={handleForm}
             /><br/>
             
             <label htmlFor="check"></label>
             <input type="checkbox" name="" id="" 
-            // checked={}
-            // onChange={handleForm}
             /><br/>
 
-            {/* <button onClick={handleClick}
-            className={`${isDone ? styles.button : styles.add} `}>
-                送信
-            </button> */}
         </form>
     )
 }

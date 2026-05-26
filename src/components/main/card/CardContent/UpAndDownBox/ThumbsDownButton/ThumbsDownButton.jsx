@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from './ThumbsDownButton.module.css';
-import thumbdown from '../../../assets/imges/thumb_down.svg';
-import thumbdowncolor from '../../../assets/imges/thumb_down_color.svg';
+import thumbdown from '../../../../../../assets/imges/thumb_down.svg';
+import thumbdowncolor from '../../../../../../assets/imges/thumb_down_color.svg';
 
 
 export default function ThumbsDownButton({props = 0}) {
