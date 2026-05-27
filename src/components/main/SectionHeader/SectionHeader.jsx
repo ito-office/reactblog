@@ -1,4 +1,4 @@
-// import { Children } from "react";
+import { Children } from "react";
 import styles from './SectionHeader.module.css';
 
 export default function SectionHeader({children = 'Latest Blog Posts'}) {

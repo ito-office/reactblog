@@ -8,6 +8,8 @@ import PictureItem from '../card/PictureItem/PictureItem';
 import ThumbsUpButton from '../card/CardContent/UpAndDownBox/ThumbsUpButton/ThumbsUpButton';
 import ThumbsDownButton from '../card/CardContent/UpAndDownBox/ThumbsDownButton/ThumbsDownButton';
 import bamosList from '../../../../bamosList';
+import SectionHeader from '../SectionHeader/SectionHeader';
+import SimpleButton from '../../commons/SimpleButton/SimpleButton';
 
 export default function MainArea() {
 
@@ -26,15 +28,12 @@ export default function MainArea() {
 
     return(
         <main>
-            {/* <h1>メインエリア</h1> */}
-            {/* <HowHear items={menuItems} /> */}
-            {/* <ThumbsUpButton  props={123}/> */}
+            <SectionHeader />
+            
             <ThumbsUpButton />
-            {/* <ThumbsDownButton props={9}/> */}
             <ThumbsDownButton />
-            <BamosLogo />
 
-            <ul>
+            <ul className={styles.cardList}>
                 {bamosList.map((item,id)=> (
                     <PictureItem
                     key={id}
@@ -43,6 +42,16 @@ export default function MainArea() {
                     />
             ))}
             </ul>
+
+            <SectionHeader children = 'We Value Your Feedback'/>
+            <p>{`We’re gathering feedback from our
+                customers at BAMOS DESIGN. Please take 
+                a moment to share your thoughts — your 
+                input helps us make BAMOS DESIGN even 
+                better.`}</p>
+
+            <SimpleButton  children = 'Feedback'/>
+            
         </main>
     );
 }

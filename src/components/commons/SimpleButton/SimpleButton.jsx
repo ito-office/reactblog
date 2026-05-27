@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { Children, useState } from "react";
 import styles from './SimpleButton.module.css';
 
-export default function SimpleButton() {
+export default function SimpleButton({children}) {
     const [isDone , setIsDone] = useState(false);
 
     const handleMouseOver = () => {
@@ -13,12 +13,12 @@ export default function SimpleButton() {
     }
 
     return(
-        <div>
+        <div className={styles.hoverbutton}>
             <button 
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
-            className={isDone ? styles.button : styles.add}>
-                送信
+            className={isDone ? styles.add : styles.button}>
+                {children}
             </button>
         </div>
     );
