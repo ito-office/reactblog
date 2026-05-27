@@ -1,4 +1,4 @@
-import styles from '../../commons/BamosLogo.module.css';
+import styles from './BamosLogo.module.css';
 
 export default function BamosLogo(props) {
     return(

@@ -3,9 +3,11 @@ import styles from './MainArea.module.css'
 import HowHear from '../Form/HowHear/HowHear';
 import RadioButton from '../Form/RadioButton/RadioButton';
 import CheckBox from '../Form/CheckBox/CheckBox';
-import ThumbsUpButton from '../ThumbsUpButton/ThumbsUpButton';
-import ThumbsDownButton from '../ThumbsDownButton/ThumbsDownButton';
 import BamosLogo from '../../commons/BamosLogo/BamosLogo';
+import PictureItem from '../card/PictureItem/PictureItem';
+import ThumbsUpButton from '../card/CardContent/UpAndDownBox/ThumbsUpButton/ThumbsUpButton';
+import ThumbsDownButton from '../card/CardContent/UpAndDownBox/ThumbsDownButton/ThumbsDownButton';
+import bamosList from '../../../../bamosList';
 
 export default function MainArea() {
 
@@ -24,11 +26,23 @@ export default function MainArea() {
 
     return(
         <main>
-            <h1>メインエリア</h1>
+            {/* <h1>メインエリア</h1> */}
             {/* <HowHear items={menuItems} /> */}
-            <ThumbsUpButton  props={123}/>
-            <ThumbsDownButton props={9}/>
+            {/* <ThumbsUpButton  props={123}/> */}
+            <ThumbsUpButton />
+            {/* <ThumbsDownButton props={9}/> */}
+            <ThumbsDownButton />
             <BamosLogo />
+
+            <ul>
+                {bamosList.map((item,id)=> (
+                    <PictureItem
+                    key={id}
+                    image={item.image}
+                    title={item.title}
+                    />
+            ))}
+            </ul>
         </main>
     );
 }

@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import styles from './ThumbsUpButton.module.css';
-import thumbup from '../../../../../../assets/imges/thumb_up.svg';
 import thumbupcolor from '../../../../../../assets/imges/thumb_up_color.svg';
-
+import thumbup from '../../../../../../assets/imges/thumb_up.svg'
 export default function ThumbsUpButton({props = 0}) {
 
 //propsでStateを初期化

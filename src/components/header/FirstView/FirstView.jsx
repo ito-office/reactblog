@@ -1,4 +1,4 @@
-import styles from '../FirstView.module.css';
+import styles from './FirstView.module.css';
 import FirstView from '../../../assets/imges/karsten-winegeart-T-yAoikgido-unsplash.jpg'
 import Logopink from '../../../assets/imges/bamosDesignLogo_accent.svg';
 

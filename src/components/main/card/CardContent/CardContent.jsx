@@ -1,1 +1,1 @@
-import styles from '../CardContent.module.css';
+import styles from './CardContent.module.css';
