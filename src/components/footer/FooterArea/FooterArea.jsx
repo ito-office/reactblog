@@ -4,7 +4,9 @@ import styles from './FooterArea.module.css'
 export default function FooterArea() {
     return(
         <footer>
-            <BamosLogo/>
+            <div className={styles.footerlogo}>
+                <BamosLogo />                
+            </div>
         </footer>
     )
     

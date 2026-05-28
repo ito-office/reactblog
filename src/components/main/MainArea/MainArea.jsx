@@ -10,6 +10,7 @@ import ThumbsDownButton from '../card/CardContent/UpAndDownBox/ThumbsDownButton/
 import bamosList from '../../../../bamosList';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import SimpleButton from '../../commons/SimpleButton/SimpleButton';
+import CardHeaders from '../card/CardContent/CardHeaders/CardHeaders';
 
 export default function MainArea() {
 
@@ -30,18 +31,28 @@ export default function MainArea() {
         <main>
             <SectionHeader />
             
-            <ThumbsUpButton />
-            <ThumbsDownButton />
-
-            <ul className={styles.cardList}>
+            <div className={styles.cardList}>
                 {bamosList.map((item,id)=> (
-                    <PictureItem
-                    key={id}
-                    image={item.image}
-                    title={item.title}
-                    />
-            ))}
-            </ul>
+                    <div>
+                        <PictureItem
+                        key={id}
+                        image={item.image}
+                        title={item.title}
+                        />
+                        <div className={styles.cardcontent}>
+                            <CardHeaders  category={item.category} title={item.title} author={item.author}/>
+                            <ThumbsUpButton props={item.thumbsUp}/>
+                            <ThumbsDownButton props={item.thumbsDown}/>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            
+
+            
+            
+
 
             <SectionHeader children = 'We Value Your Feedback'/>
             <p>{`We’re gathering feedback from our
@@ -51,7 +62,6 @@ export default function MainArea() {
                 better.`}</p>
 
             <SimpleButton  children = 'Feedback'/>
-            
         </main>
     );
 }

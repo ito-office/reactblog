@@ -1,3 +1,22 @@
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    gap: 1rem;
+    
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cardcontent{
+    display: flex;
+
+    justify-content: space-between;
+}
+
 p{
     margin-bottom: 26px;
 }
